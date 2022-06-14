@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Press Start 2P', cursive;
+}
+
+html,body{
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.center{
+	max-width: 1280px;
+	padding: 0 10%;
+	margin: 0 auto;
+}
+
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding: 0 2%;
+	width: 50%;
+
+}
+
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/**estilização**/
+header{
+	padding: 10px 0;
+	background: #461d2d;
+}
+
+
+.mobile{
+	display: none;
+}
+
+.desktop ul{
+	list-style-type: none;
+	position: relative;
+	top: 38px;
+}
+.desktop li{
+	font-weight: 300;
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.desktop a{
+	color: white;
+	text-decoration: none;
+}
+.desktop a:hover{
+	text-decoration: underline;
+}
+
+.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image: url('../images/desenvolver.png');
+	background-size: cover;
+	position: relative;
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgb(51, 51, 51, 0.7);
+}
+
+.banner-principal form{
+	max-width: 600px;
+	width: 93%;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.banner-principal form h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+.banner-principal form input[type=email]{
+	width: 100%;
+	height: 66px;
+	background: white;
+	margin-top: 10px;
+	color: #333;
+	font-size: 23px;
+	padding-left: 10px;
+	font-family: ariel;
+}
+.banner-principal form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	background: #e7d035;
+	margin-top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	border: 0;
+}
+
+.descricao-autor{
+	padding: 30px 0;
+}
+.descricao-autor h2{
+	font-size: 25px;
+	font-weight: 400;
+	color: #461d2d;
+}
+.descricao-autor p{
+	font-size: 16px;
+	color: #e7d035;
+	margin-top: 10px;
+}
+.eu img{
+	height: 350px;
+	width: 350px;
+	border-radius: 175px;
+	border: solid 5px;
+	border-color: #b9dfd2;
+}
+
+.especialidade{
+	padding: 40px 0;
+	background: #e7d035;
+}
+.especialidade h2.title{
+	font-size: 30px;
+	font-weight: 400;
+	color: #b9dfd2;
+	text-align: center;
+}
+.box-especialidade{
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+.box-especialidade h3{
+	color: #404580;
+	font-size: 40px;
+}
+.box-especialidade h4{
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 25px;
+	color: #72ABBA;
+}
+.box-especialidade ul{
+	list-style-type: none;
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.sobre{
+	padding: 30px 0;
+	background: #461d2d;
+}
+.sobre h2.title{
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #e7d035;
+	text-align: center;
+}
+.sobre img{
+	height: 300px;
+	width: 250px;
+	border-radius: 5px;
+}
+.LI-profile-badge{
+	text-align: center;
+}
+.github{
+	text-align: center;
+}
+
+.habilidades{
+	padding: 40px 0;
+	background: #e7d035;
+}
+.habilidades h2.title{
+	color: #461d2d;
+	text-align: center;
+	font-size: 30px;
+}
+.servicos-container{
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+.servicos-container h3{
+	border: 3px solid white;
+	padding: 5px;
+	font-size: 20px;
+	color: #404580;
+	font-weight: 300;
+}
+
+footer{
+	background: white;
+	padding: 30px 0;
+}
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+section.erro-404{
+	padding: 30px 0;
+}
+section.erro-404 i{
+	font-size: 30px;
+}
+section.erro-404 h2{
+	text-align: center;
+	color: #e7d035;
+}
+
+.contato-container{
+	padding: 40px 0;
+	text-align: center;
+}
+.contato-container input[type=text]{
+	margin: 8px 0;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: red;
+}
+.contato-container textarea{
+	margin: 8px 0;
+	width: 100%;
+	height: 120px;
+	padding-left: 8px;
+	font-size: 16px;
+	max-width: 800px;
+	color: #444;
+}
+
+
+@media screen and (max-width: 768px){
+	.w50{
+		width: 100%;
+		padding: 20px;
+	}
+	.img{
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+	}
+	.w33{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile{
+		margin-top: 20px;
+		display: block;
+		font-size: 40px;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.mobile ul{
+		top: 80px;
+		z-index: 3;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		display: none;
+		text-align: center;
+	}
+	.mobile li{
+		font-weight: 300;
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 17px;
+		padding: 20px 0;
+	}
+	.mobile a{
+		display: block;
+		color: #e7d035;
+		text-decoration: none;
+	}
+}
